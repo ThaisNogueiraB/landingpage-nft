@@ -85,7 +85,7 @@ input:checked ~ label .hamburguer:after
 
 input:checked ~ label .menu-responsive
 {
-  box-shadow: 0 0 0 100vw rgba(139, 16, 197, 1), 0 0 0 100vw rgba(34, 34, 34, 1);  
+  box-shadow: 0 0 0 100vw rgba(139, 16, 197, 0.9);  
   z-index: 2;
 }
 
