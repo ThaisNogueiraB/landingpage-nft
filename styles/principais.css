@@ -1,0 +1,191 @@
+.principais{
+    overflow: hidden;
+    padding-bottom: 50px;
+}
+
+.principais-titulo{
+    text-align: center;
+    font-family: 'Aldrich';
+    font-weight: 400;
+    font-size: 16px;
+    padding-bottom: 26px;
+}
+.slide-principais-grande{
+    display: none;
+}
+
+.slide-principais-grande-grande{
+    display: none;
+}
+
+.card-principais{
+    width: 100%;
+    max-width: 156px;
+    position: relative; 
+    border-radius: 20px;
+}
+
+
+.card-img{
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    transition:transform .3s ease;
+}
+
+.card--img{
+    width: 156px;
+    border-radius: 20px;
+}
+
+.card-img:hover{
+    transform: scale(1.1);
+}
+
+.card-info{
+    display: flex;
+    background: rgba(255, 244, 244, 0.05);
+    backdrop-filter: blur(2px);
+    position: absolute;
+    bottom: 0;
+    width: 156px;
+    opacity: 0;
+    transition: all .3s ease;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.card-img:hover > .card-info{
+    opacity: 1;
+}
+
+.card-info-img{
+    max-width: 20px;
+    padding: 6px 0 6px 10px;
+}
+
+.card-info-info{
+    padding: 10px 10px 10px 3px;
+}
+
+.card-info-criador{
+    font-size: 8px;
+}
+
+.card-info-nome{
+    font-family: 'Aldrich';
+    font-weight: 400;
+    font-size: 10px;
+    padding-top: 5px;
+}
+
+.card-info-eth{
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 10px;
+}
+
+.img-eth{
+    width:4px;
+    padding-right: 5px;
+}
+
+.valores-eth{
+    font-size: 8px;
+}
+
+@media screen and (min-width: 1920px){
+
+    .principais-titulo{
+        text-align: left;
+        font-family: 'Aldrich';
+        font-weight: 400;
+        font-size: 36px;
+        padding-bottom: 26px;
+        padding-left: 136px;
+    }
+
+    .principais-titulo::before{
+        content: "";
+         float: left;
+         width: 30px;
+         height: 10px;
+         margin: 20px 5px 0 0;
+        background: linear-gradient(90deg, #2C1445 0%, #A841FA 100%);
+    }
+
+    .card--img{
+        width: 400px;
+        border-radius: 20px;
+    }
+
+    .card-principais{
+        padding-top: 85px;
+    }
+
+    .slide-principais-grande{
+        display: block;
+    }
+
+    .slide-principais-grande-grande{
+        display: none;
+    }
+
+    .slide-principais{
+        display: none;
+    }
+
+    .card-info{
+        width: 400px;
+    }
+
+    .card-info-info {
+        padding: 31px 15px 31px 11px;
+    }
+    
+    .card-info-img {
+        max-width: 80px;
+        padding: 15px 0 15px 16px;
+    }
+    .card-info-criador {
+        font-size: 16px;
+    }
+
+    .card-info-nome {
+        font-size: 24px;
+    }
+
+    .card-info-eth{
+        padding-bottom: 32px;
+    }
+
+    .card-info-eth .img-eth{
+        width:11px;
+    }
+    
+    .card-info-eth .valores-eth{
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 2560px){
+    .principais-titulo{
+        padding-left: 200px;
+    }
+
+    .slide-principais-grande{
+    display: none;
+    }
+
+    .slide-principais-grande-grande{
+        display: block;
+    }
+
+    .card--img{
+        width: 630px;
+    }
+
+    .card-info{
+        width: 430px;
+    }
+}

@@ -1,0 +1,170 @@
+.container{
+padding: 16px 16px;
+
+}
+
+.header-lista{
+  display: none;
+}
+
+hr{
+ margin:0;
+  height:1.5px; 
+  border:0; 
+  background: var(--cor-degrade);
+}
+
+.menu-responsive
+{
+  width: 60px;
+  border-radius: 20%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  box-shadow:var( --cor-degrade);
+  transition: box-shadow 1.1s cubic-bezier(.19,1,.22,1);
+  
+}
+
+.hamburguer
+{
+  width: 30px;
+  height: 2px;
+  background:#f4f4f4;
+  position: relative;
+  top:29px;
+  left: 15px;
+  display: block;
+  transition: .3s ease-in-out;
+}
+
+.hamburguer:before,
+.hamburguer:after
+{
+  content: '';
+  display: block;
+  background:#f4f4f4;
+  width: 30px;
+  height: 2px;
+  transition: .3s ease-in-out;
+  position: absolute;
+}
+
+.hamburguer:before
+{
+  top: -10px;
+}
+
+.hamburguer:after
+{
+  bottom: -10px;
+}
+
+input
+{
+  display: none;
+}
+
+input:checked ~ label .hamburguer
+{
+  transform: rotate(45deg);
+}
+
+input:checked ~ label .hamburguer:before
+{
+  transform:rotate(90deg);
+  top:0;
+}
+
+input:checked ~ label .hamburguer:after
+{
+  transform: rotate(90deg);
+  bottom:0;
+}
+
+
+input:checked ~ label .menu-responsive
+{
+  box-shadow: 0 0 0 100vw rgba(139, 16, 197, 0.7), 0 0 0 100vw rgba(34, 34, 34, 0.7);  
+  z-index: 2;
+}
+
+
+input:checked ~ nav
+{
+  opacity: 1;
+  z-index: 3;
+}
+
+ nav
+{
+  position: absolute;
+  top:35%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  list-style: none;
+  
+  opacity: 0;
+  transition: .25s .1s cubic-bezier(0,1.07,0,1.02);
+}
+
+ nav a{
+  font-family: 'Aldrich';
+  margin-bottom: 40px;
+  color:#f4f4f4;
+  font-size: 30px;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+}
+
+nav a:hover{
+  transform: scale(1.1);
+  content: "";
+}
+
+@media screen and (min-width: 1920px){
+  .container{
+    margin: 24px 100px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+    
+    .header-lista{
+      display: flex;
+      gap:40px;
+      padding-left: 69%;
+    }
+  
+    .header-lista-item a{
+      font-size: 24px;
+      text-decoration: none;
+      color: #f4f4f4;
+    }
+    
+  .header-lista-item:hover{
+      transform: scale(1.1);
+    }
+    .menu-responsive{
+      display: none;
+    }
+    .hamburguer{
+      display: none;
+    }
+}
+
+
+@media screen and (min-width: 2560px){
+.container{
+  margin: 36px 200px;
+}
+.header-lista-item a{
+  font-size: 36px;
+}
+.Img-logo{
+  width:250px;
+}
+
+}

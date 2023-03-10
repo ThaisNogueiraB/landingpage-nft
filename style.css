@@ -1,0 +1,80 @@
+@import url(./styles/header.css);
+@import url(./styles/banner.css);
+@import url(./styles/principais.css);
+@import url(./styles/colecionadores.css);
+@import url(./styles/cadastro.css);
+@import url(./styles/footer.css);
+
+:root{
+    --fonte-principal:'Aldrich', sans-serif;
+    --fonte-secundaria:'Roboto Condensed', sans-serif;
+    --cor-princial:#F4F4F4;
+    --cor-degrade:linear-gradient(90deg, #2C1445 0.83%, #A841FA 48.98%, #EB09E1 100%);
+    --cor-de-fundo: linear-gradient(90deg, #020020 1.51%, #24133C 39.91%, #A60FE8 100%);
+    --cor-fundo-menu:rgba(139, 16, 197, 0.3);
+}
+
+body{
+    overflow-x: hidden;
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-princial);
+    background-size: 300% 300%;
+    background-image: linear-gradient(
+        -90deg, 
+        #020020 1.51%, 
+        #24133C 39.91%, 
+        #A60FE8 100%);  
+    animation: AnimateBG 8s ease infinite;
+    animation-direction: alternate;  
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+.voltaraotopo{
+   display: none;
+}
+
+@keyframes opacidade{
+    0%{
+       opacity: 0;
+    }
+    100%{
+       opacity:1;
+    }
+}
+
+.voltaraotopo:hover{
+    animation-name: opacidade;
+
+}
+
+
+
+
+@media screen and (min-width: 1920px){
+.voltaraotopo{
+    display: block;
+    position: absolute;
+    position: fixed;
+    bottom:50px;
+    right: 40px;
+    z-index: 1;
+}
+
+}
+
+
+
+
+    @keyframes AnimateBG { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+    }
+
+
+
+    

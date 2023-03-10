@@ -1,0 +1,182 @@
+
+.colecionadores{
+    margin: 0 0 50px 0;
+}
+
+
+.colecionadores-titulo{
+    text-align: center;
+    font-family: 'Aldrich';
+    font-weight: 400;
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+.colecionadores-sub{
+    text-align: center;
+    font-size: 14px;
+
+}
+
+
+.colecionadores-card{
+    margin:16px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap:16px 0;
+}
+
+
+
+.colecionadores-card-lista{
+    display: flex;
+    width: 156px;
+    border-radius: 20px;
+    border:1px solid #A60FE8;
+    background-color:transparent;
+    backdrop-filter: blur(10px);
+    padding-left: 9px
+  }
+
+@keyframes animacao{
+    0%{
+        transform:scale(1);
+    }
+    100%{
+        transform: scale(1.02);
+    }
+}
+
+.colecionadores-card-lista:hover{
+    animation-name: animacao;
+    animation-duration: 0.3s;
+    animation-timing-function:ease-out;
+}
+
+
+
+
+.colecionadores-card-img{
+    max-width: 30px;
+    
+}
+
+.colecionadores-card-info{
+    padding: 10px 10px 10px 6px;
+}
+
+.colecionadores-card-nome{
+    font-family: 'Aldrich';
+    font-size: 12px;
+}
+
+.colecionadores-card-eth{
+    display: flex;
+}
+
+.img-eth{
+    width:6px;
+    padding-right: 5px;
+}
+
+.valores-eth{
+    font-size: 10px;
+    padding-top: 5px;
+}
+
+.colecionadores-card-classific{
+    padding: 9px 0;
+   
+}
+
+.colecionadores-classific-valor{
+    font-size: 7px;
+}
+
+@media screen and (min-width: 1920px){
+    .colecionadores {
+        margin: 150px 0;
+    } 
+    .colecionadores-titulo{
+        text-align: left;
+        font-family: 'Aldrich';
+        font-weight: 400;
+        font-size: 36px;
+        padding-left: 136px;
+    }
+
+    .colecionadores-titulo::before{
+        content: "";
+         float: left;
+         width: 30px;
+         height: 10px;
+         margin: 20px 5px 0 0;
+        background: linear-gradient(90deg, #2C1445 0%, #A841FA 100%);
+    }
+
+    .colecionadores-sub {
+        text-align:left;
+        font-size: 32px;
+        padding-left:  175px;
+    }
+
+    .colecionadores-card {
+        margin: 100px 100px;
+    }
+
+    .colecionadores-card-lista {
+        width: 800px;
+        padding: 0;
+        border: 3px solid #A60FE8;
+    }
+
+    .colecionadores-card-img{
+        max-width:80px;
+        padding: 20px 28px 20px 40px;
+    }
+
+    .colecionadores-card-info{
+        padding: 35px 280px 35px 0;
+    }
+
+    .colecionadores-card-nome{
+        font-size: 36px;
+    }
+
+    .valores-eth{
+        font-size: 32px;
+    }
+
+    .img-eth{
+        width: 12px;
+    }
+
+    .colecionadores-classific-valor{
+        font-size: 32px;
+        padding: 50px 0;
+    }
+
+}
+
+@media screen and (min-width: 2560px){
+    .colecionadores-titulo{
+        padding-left: 200px;
+    }
+
+    .colecionadores-sub{
+        padding-left: 238px;
+    }
+
+    .colecionadores-card{
+        margin: 100px 250px;
+    }
+
+    .colecionadores-card-lista{
+        width:1000px;
+    }
+
+    .colecionadores-card-info{
+        padding: 35px 480px  35px 0;
+    }
+}
