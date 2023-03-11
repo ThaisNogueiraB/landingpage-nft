@@ -8,14 +8,17 @@
     border-radius: 20px;
     display: flex;
     padding: 20px;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .cadastro-img-img{
-    height: 116px;
-    padding: 0 20px 0 0;
+   display: none;
 }
 
+.cadastro-img-mobile{
+    height: 90px;
+    padding: 0 20px 0 0;
+}
 
 .cadastro-conteudo-titulo{
     font-family: 'Aldrich';
@@ -86,8 +89,13 @@
     }
 
     .cadastro-img-img{
+        display: block;
         height: 475px;
         padding-right: 132px;
+    }
+
+    .cadastro-img-mobile{
+        display: none;
     }
 
     .cadastro-conteudo-titulo{
