@@ -17,11 +17,9 @@ hr{
 .menu-responsive
 {
   width: 60px;
-  border-radius: 20%;
   position: absolute;
   top: 0;
   right: 0;
-  box-shadow:var( --cor-degrade);
   transition: box-shadow 1.1s cubic-bezier(.19,1,.22,1);
   
 }
@@ -93,7 +91,7 @@ input:checked ~ label .menu-responsive
 input:checked ~ nav
 {
   opacity: 1;
-  z-index: 3;
+  z-index: 4;
 }
 
  nav
